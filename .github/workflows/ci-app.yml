@@ -1,0 +1,22 @@
+# file: .github/workflows/ci-app.yml
+name: ci-app
+# on – определяет события, которые запускают воркфлоу
+on: push
+jobs:
+  # build – произвольно выбранное имя задания
+  # их может быть больше одного
+  build:
+    # операционная система для работы воркфлоу
+    runs-on: ubuntu-latest
+    steps:
+      # Клонируем репозиторий
+      - uses: actions/checkout@v3
+      # Устанавливаем Node.js
+      - uses: actions/setup-node@v3
+      - run: make setup
+      - run: make start
+      # Запускаем тесты
+      # имя выводится на Github при просмотре сборки
+      - name: run tests
+        run: make test
+        run: make lint
