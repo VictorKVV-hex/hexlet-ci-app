@@ -18,5 +18,5 @@ jobs:
       # Запускаем тесты
       # имя выводится на Github при просмотре сборки
       - name: run tests
-        run: make test
-        run: make lint
+      - run: make test
+      - run: make lint
