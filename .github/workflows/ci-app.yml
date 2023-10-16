@@ -19,4 +19,6 @@ jobs:
       # Запускаем тесты
       - name: run tests
         run: make test
-      - run: make lint
+      # Запускаем линтер
+      - name: run lint  
+        run: make lint
