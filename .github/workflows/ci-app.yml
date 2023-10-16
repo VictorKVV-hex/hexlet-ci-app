@@ -3,8 +3,6 @@ name: ci-app
 # on – определяет события, которые запускают воркфлоу
 on: push
 jobs:
-  # build – произвольно выбранное имя задания
-  # их может быть больше одного
   build:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
@@ -19,7 +17,6 @@ jobs:
       - run: make install
       - run: make start
       # Запускаем тесты
-      # имя выводится на Github при просмотре сборки
       - name: run tests
-      - run: make test
-      - run: make lint
+        run: make test
+        run: make lint
