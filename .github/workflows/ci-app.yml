@@ -9,16 +9,11 @@ jobs:
     steps:
       # Клонируем репозиторий
       - uses: actions/checkout@v3
-      # Устанавливаем Node.js
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
       - run: make setup
-      - run: make install
-      - run: make start
-      # Запускаем тесты
-      - name: run tests
-        run: make test
       # Запускаем линтер
       - name: run lint  
         run: make lint
+      # Запускаем тесты
+      - name: run tests
+        run: make test
+
