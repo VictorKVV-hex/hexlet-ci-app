@@ -35,4 +35,4 @@ This repository is created and maintained by the team and the community of Hexle
 
 See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
 
-[![Actions Status](https://github.com/VictorKVV-hex/hhexlet-ci-app/workflows/ci-app/badge.svg)](https://github.com/VictorKVV-hex/hexlet-ci-app/actions)
+[![Actions Status](https://github.com/VictorKVV-hex/hexlet-ci-app/workflows/ci-app/badge.svg)](https://github.com/VictorKVV-hex/hexlet-ci-app/actions)
